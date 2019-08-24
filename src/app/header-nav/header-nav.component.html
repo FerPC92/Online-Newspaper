@@ -1,0 +1,52 @@
+
+    <div class="row row-head-top">
+         <div class="col-sm-12 col-md-12 col-lg-12 col-head-top">
+             <div class="searcher">
+                <p class="date">{{date}}</p>
+                <button class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="query" id="query-param" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+                <a routerLinkActive="active" [routerLink]="['/query', query]">
+                <button class="btn-go" type="submit"  >Go</button>  </a>
+            </div>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      {{selectName}}
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#" *ngFor=" let element of this._mainService.selection ; let i=index" (click)="this._mainService.getGeneralHeadNewsByCountry(element.country)" (click)="this._mainService.getSourcesInfo(element.language,element.country)" (click)="selectNameChange(element.name)">{{element.name}}</a>
+                    </div>
+            </div>
+                     
+            <div class="buttons">
+                <button class="subscribe">SUBSCRIBE NOW</button>
+                <button class="login">LOG IN</button>
+            </div>
+
+        </div>
+    </div>
+<div class="cont-info">
+    <div class="row row-title">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-title">
+            <h1 class="title-head">~ Daily Bugle ~</h1>
+            <h3 class="sub-title-head">All Newspapers, One Place</h3>
+        </div>
+    </div>
+<div class="cont-category">
+    <div class="list-category" *ngFor=" let element of this._mainService.sourcesInfo | slice:0:12">
+    <a routerLinkActive="active" [routerLink]="['/newspaper', element.id]">{{element.name}}</a>
+    </div>
+</div>
+<div class="cont-category2">
+    <div class="list-category" *ngFor=" let element of this._mainService.sourcesInfo | slice:13:25">
+        <a routerLinkActive="active" [routerLink]="['/newspaper', element.id]">{{element.name}}</a>
+    </div>
+</div>
+<div class="cont-category3">
+    <div class="list-category" *ngFor=" let element of this._mainService.sourcesInfo | slice:26:37">
+        <a routerLinkActive="active" [routerLink]="['/newspaper', element.id]">{{element.name}}</a>
+    </div>
+</div>
+
+
+
+</div> <!--end container-->

@@ -1,0 +1,65 @@
+<app-header-nav></app-header-nav>
+
+<div class="contain-box">
+  <div class="row row-content">
+    <div class="col-sm-8 col-md-8 col-lg-8 col-left-content">
+      <div class="list-head-news" *ngFor=" let element of this._mainService.generalHeadNewsInfo |slice:0:9">
+        <div class="info-contain">
+          <h2>{{element.title}}</h2>
+          <p class="publish-date">Published At {{element.publishedAt | slice:0:10}}.</p>
+          <p class="description">{{element.description}}</p>
+        </div>
+        <div class="img-contain">
+          <img class="img-left" [src]="element.urlToImage" alt="">
+          <div class="link-news">
+            <a [href]="element.url" target="_blank">Click To Read The Full Article</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end col left-->
+    <div class="col-sm-4 col-md-4 col-lg-4 col-right-content">
+      <div class="list-head-news-right" *ngFor=" let element of this._mainService.generalHeadNewsInfo |slice:10:20">
+        <div class="img-contain-right">
+          <img class="img-right" [src]="element.urlToImage" alt="">
+          <div class="link-news-right">
+            <a [href]="element.url" target="_blank">Click To Read The Full Article</a>
+          </div>
+        </div>
+          <div class="info-contain-right">
+            <h2>{{element.title}}</h2>
+            <p class="publish-date-right">Published At {{element.publishedAt | slice:0:10}}.</p>
+            <p class="description-right">{{element.description}}</p>
+          </div>
+
+        
+      </div>
+
+
+    </div>
+
+
+  </div>
+  <!--end row-->
+
+
+
+</div>
+<!--end container-->
+<app-footer></app-footer>
+
+
+
+
+
+
+
+
+<!--
+    <div class="list-head-news" *ngFor=" let element of this._mainService.generalHeadNewsInfo">
+    <h2>{{element.title}}</h2>
+    <p>{{element.publishedAt}}</p>
+    <p>{{element.description}}</p>
+    <img [src]="element.urlToImage" alt="">
+</div>
+-->

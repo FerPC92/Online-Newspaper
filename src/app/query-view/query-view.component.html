@@ -1,0 +1,49 @@
+<div class="row row-nav-query">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-nav-query">
+    <p class="nav-source-query">
+      Searching By : <strong> {{wordParam}}</strong></p>
+    <h4 class="title-nav-query">~ Daily Bugle ~</h4>
+    <a routerLinkActive="back-home-query" [routerLink]="['/']">Back To Home</a>
+  </div>
+</div>
+<div class="row row-main-query-title">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-main-query-title">
+    <div class="list-selected-query">
+      <h1 class="query-title">News Related To <strong> {{wordParam}}</strong> </h1>
+      
+    </div>
+  </div>
+</div>
+<div class="container">
+        <p class="latest"> <strong> Showing The Latest 20 Results Published At The World</strong> <i class="fa fa-angle-down" aria-hidden="true"></i></p> 
+  <div class="row row-query-news">
+    <div class="col-sm-2 col-md-2 col-lg-2 col-query-left">
+      <div class="main-query-left" *ngFor="let element of this._mainService.querySearch">
+        <p>Date:</p>
+        <p>{{element.publishedAt | slice:0:10}}</p>
+      </div>
+    </div>
+
+    <div class="col-sm-9 col-md-9 col-lg-9 col-query-right">
+      <div class="main-query-right" *ngFor="let element of this._mainService.querySearch">
+        <div>
+        <a class="query-title-left" [href]="element.url" target="_blank">{{element.title}}</a>
+        <p>{{element.content | slice:0:260}}...</p>
+        <p> |<strong>By {{element.author}} </strong> </p>
+        </div>
+        <div>
+            <img class="img-source-right" [src]="element.urlToImage" alt="">
+        </div>
+      </div>
+
+    </div>
+ 
+  </div>
+
+  <div class="foot">
+<app-footer></app-footer>
+</div>
+  
+</div><!-- end container-->
+
+

@@ -1,0 +1,160 @@
+.row-content{
+    margin-right: 5px;
+}
+
+.img-left{
+    height: 220px;
+    width: 330px;
+    border-radius: 3px;
+}
+
+ .col-left-content{
+    border-right: 1px solid black;
+} 
+
+.list-head-news{
+    display: flex;
+    padding: 15px 0  15px  5px;
+    border-bottom: 1px solid grey;
+}
+
+.info-contain h2{
+    font-family: 'lato', sans-serif;
+    text-transform: capitalize;
+    font-size: 21px;
+    color: black;
+    padding-left: 2px;
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+.publish-date{
+    font-family: 'lato', sans-serif;
+    font-size: 12px;
+
+}
+
+.img-contain{
+    padding-top: 11px;
+    position: relative;
+    
+}
+.description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-right: 3px;
+}
+
+.link-news{
+    position: absolute;
+    height:60px;
+    width: 100%;
+    background: black;
+    top: 170px;
+    opacity: 0.5;
+}
+
+.link-news a{
+    padding-top: 10px;
+    letter-spacing: 2px;
+    color: white;
+    position: relative;
+    top: 14px;
+    left: 10px;
+}
+
+.link-news:hover{
+    color: white;
+    opacity: 0.7;
+    background: black;
+    text-decoration: none;
+}
+
+.link-news a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* right side*/
+
+.col-right-content{
+    padding-left: 0 !important;
+    
+}
+
+.img-right{
+    height: 100px;
+    width: 160px;
+    border-radius: 3px;
+    float: left;
+}
+.img-contain-right{
+    position: relative;
+}
+
+
+.list-head-news-right{
+    padding: 15px 0  15px  15px;
+    border-bottom: 1px solid grey;
+}
+
+.info-contain-right h2{
+    font-family: 'lato', sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: black;
+    padding-left: 2px;
+    font-weight: bold;
+    position: relative;
+    left: 5px;
+
+}
+
+.link-news-right{
+    position: absolute;
+    height:37px;
+    width: 41%;
+    background: black;
+    top: 64px;
+    opacity: 0.5;
+}
+
+.link-news-right a{
+    letter-spacing: 2px;
+    color: white;
+    position: relative;
+    top: 5px;
+    font-size: 7px;
+    padding-left: 4px;
+
+}
+
+.link-news-right:hover{
+    color: white;
+    opacity: 0.8;
+    background: black;
+    text-decoration: none;
+    
+}
+
+.link-news-right a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.description-right{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-right: 3px;
+    padding-top: 29px;
+}
+
+.publish-date-right{
+    font-family: 'lato', sans-serif;
+    font-size: 10px;
+    position: relative;
+    left: 5px;
+
+}

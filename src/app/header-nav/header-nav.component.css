@@ -1,0 +1,167 @@
+.row{
+    width: 99.7%
+}
+
+.col-head-top{
+    padding-top: 6px;
+    display: flex;
+    justify-content: center
+}
+.date{
+    font-family: 'Lato';
+    padding-left: 10px;
+}
+
+.searcher{
+    display: flex ;
+    position: relative;
+    left:-138px ;
+    margin-top: 5px;
+}
+.searcher input{
+    height:24px !important;
+}
+.searcher button{
+    height:24px !important;
+}
+
+.buttons{
+    position: relative;
+    left: 108px;
+   
+}
+
+.search-icon{
+    margin-left: 10px;
+    background: #6288a5;
+    border: 1px solid #326891;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.search-icon i {
+    position: relative;
+    top: -2px;
+}
+
+.btn-go{
+    background: #6288a5;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #326891;
+    padding-top: 0px;
+
+}
+
+#dropdownMenuButton{
+    background: #6288a5;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #326891;
+    height: 27px;
+    padding-top: 0px;
+}
+
+.dropdown{
+    right: 95px;
+}
+
+
+
+.form-control{
+    width: 30%;
+    margin-left: 20px;
+}
+
+.subscribe{
+    background: #6288a5;
+    border-radius: 4px;
+    border: 1px solid #326891;
+    color: white;
+}
+.login{
+    background: #6288a5;
+    border-radius: 4px;
+    border: 1px solid #326891;
+    margin-left: 10px;
+    color: white;
+    
+
+}
+
+
+/*row-title*/
+
+.row-title{
+    border-bottom: 1px solid black;
+    width: 102%;
+}
+
+.title-head{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+    
+}
+
+.sub-title-head{
+    font-family: 'News Cycle', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 4px;
+
+}
+
+/* list categories*/
+
+.cont-category{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 14px;
+    /* border-bottom: 1px solid black; */
+    
+    
+}
+
+.cont-category2{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 4px;
+}
+
+.cont-category3{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 4px;
+}
+/* .cont-category4{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    padding-top: 9px;
+} */
+
+.list-category a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    /*border: 1px solid black;*/
+    padding: 4px;
+}
+
+.list-category a:hover{
+    text-decoration: underline
+}
+
+.cont-info{
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+

@@ -1,0 +1,57 @@
+<div class="row row-nav-source">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-nav-source">
+    <p class="nav-source-name" *ngFor="let element of this._mainService.newspaperNews | slice:0:1">
+      {{element["source"]["name"]}} <strong>Newspaper</strong> </p>
+    <h4 class="title-nav-source">~ Daily Bugle ~</h4>
+    <a routerLinkActive="back-home" [routerLink]="['/']" >Back To Home</a>
+  </div>
+</div>
+<div class="row row-main-source-title">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-main-source-title">
+    <div class="list-selected-source" *ngFor="let element of this._mainService.newspaperNews | slice:0:1">
+      <h1 class="source-title">~{{element["source"]["name"]}}~</h1>
+      <h2 class="breaking">BREAKING NEWS</h2>
+    </div>
+  </div>
+</div>
+
+<div class="row row-source-news">
+  <div class="col-sm-5 col-md-5 col-lg-5 col-main-left">
+    <div class="main-cont-left" *ngFor="let element of this._mainService.newspaperNews | slice:0:2">
+      <img class="img-source-left" [src]="element.urlToImage" alt="">
+      <a class="source-title-left" [href]="element.url" target="_blank">{{element.title}}</a>
+      <p>{{element.content | slice:0:260}}...</p>
+      <p> |<strong> {{element.author}} </strong> </p>
+      <p>Published At {{element.publishedAt | slice:0:10}}.</p>
+    </div>
+
+  </div>
+
+  <div class="col-sm-3 col-md-3 col-lg-3 col-main-center">
+        <div class="main-cont-center" *ngFor="let element of this._mainService.newspaperNews | slice:3:6">
+          <img class="img-source-center" [src]="element.urlToImage" alt="">
+          <a class="source-title-center" [href]="element.url" target="_blank">{{element.title}}</a>
+          <p>{{element.content | slice:0:260}}...</p>
+          <p> |<strong> {{element.author}} </strong> </p>
+          <p>Published At {{element.publishedAt | slice:0:10}}.</p>
+        </div>
+    
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 col-main-right">
+            <div class="main-cont-right" *ngFor="let element of this._mainService.newspaperNews | slice:7:10">
+              <a class="source-title-right" [href]="element.url" target="_blank">{{element.title}}</a>
+              <div class="wrap-right">
+                <p>{{element.content | slice:0:260}}...</p>
+                <img class="img-source-right" [src]="element.urlToImage" alt="">
+              </div>
+              <p> |<strong> {{element.author}} </strong> </p>
+              <p>Published At {{element.publishedAt | slice:0:10}}.</p>
+            </div>
+        
+        </div>
+
+
+    </div>
+    <!--end main row-->
+    <app-footer></app-footer>
+
