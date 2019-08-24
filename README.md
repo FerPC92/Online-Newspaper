@@ -2,7 +2,7 @@
 
 This Project shows the different newspapers of different countries that you are able to select (9 countries actually), the main view (img1) is the top news at the moment in that country, if you click on one of the sources (newspapers) it re-directs you to the second view (img2) which displays the news of that specific newspaper, and finally you are able to search by query param (img3) in the navbar of the main view
 
-<a href="#">Live Preview</a>
+<a href="https://ferpc92.github.io/Online-Newspaper/">Live Preview</a>
 
 <img src="src/assets/preview1.png" height=300 >
 <hr>
